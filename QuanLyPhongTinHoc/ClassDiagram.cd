@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QuanLyPhongTinHoc.Device">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAgAAAABAJAAAAAAAAAAAAQAACAAAAAAAA=</HashCode>
+      <FileName>Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Keyboard">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Keyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Mouse">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Television">
+    <Position X="11.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Television.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Desk">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Desk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Chair">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Chair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Camera">
+    <Position X="13.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Human">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAKAAAABAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Manager">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.User">
+    <Position X="13" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.ServerModel">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>ServerModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Screen">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.PC">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAABAAACAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>PC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Room">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAIEAAAAAAAAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.LabRoom">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LabRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Cabinet">
+    <Position X="17.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Cabinet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuanLyPhongTinHoc.Database">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIAAAQAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="QuanLyPhongTinHoc.Status">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Status.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.Type">
+    <Position X="4" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Type.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.OperatingSystem">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQAAAAAAAAAAAAAABAAAAAAAAQACAAAAIAAAAAA=</HashCode>
+      <FileName>OperatingSystem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.TypeKeyBoard">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAA=</HashCode>
+      <FileName>TypeKeyBoard.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.TypeMouse">
+    <Position X="2.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAACA=</HashCode>
+      <FileName>TypeMouse.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.StatusRoom">
+    <Position X="9.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>StatusRoom.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="QuanLyPhongTinHoc.DataType">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>DataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
