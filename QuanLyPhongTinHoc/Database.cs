@@ -7,7 +7,7 @@ namespace QuanLyPhongTinHoc
     public class Database
     {
         public DataType typeOfDateBase { get; set; }
-        public List<Device> ListDevices { get; set; }
-        public List<Human> ListHuman { get; set; }
+        public List<Device> listDevices { get; set; }
+        public List<Human> listHuman { get; set; }
     }
 }
