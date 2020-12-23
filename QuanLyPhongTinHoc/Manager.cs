@@ -9,8 +9,14 @@ namespace QuanLyPhongTinHoc
     public class Manager:Human
     {
         protected Database managerDB;
-        public Manager(string name, string age, string id) : base(name, age, id) { }
-        public Manager(Human human) : base(human) { }
+        public Manager(string name, string age, string id) : base(name, age, id) 
+        {
+            managerDB = new Database();
+        }
+        public Manager(Human human) : base(human) 
+        {
+            managerDB = new Database();
+        }
         public Manager()
         {
             managerDB = new Database();
