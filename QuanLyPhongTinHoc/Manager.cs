@@ -8,15 +8,41 @@ namespace QuanLyPhongTinHoc
 {
     public class Manager:Human
     {
-        public string openLabRoom(params object[] pas)
+        protected Database managerDB;
+        public Manager(string name, string age, string id) : base(name, age, id) { }
+        public Manager(Human human) : base(human) { }
+        public Manager()
+        {
+            managerDB = new Database();
+        }
+        public object RemoveDevice(Device device)
+        {
+            managerDB.queryEvent += ManagerDB_queryEvent;
+            return managerDB.Query(device);
+        }
+        public object AddDevice(Device device)
+        {
+            managerDB.queryEvent += ManagerDB_queryEvent2;
+            return managerDB.Query(device);
+        }
+        private object ManagerDB_queryEvent(params object[] pas)
+        {
+            return "Remove device";
+        }
+        private object ManagerDB_queryEvent2(params object[] pas)
+        {
+            return "Add device";
+        }
+
+        public object openLabRoom(params object[] pas)
         {
             return "\nOpen";
         }
-        public string closeLabRoom(params object[] pas)
+        public object closeLabRoom(params object[] pas)
         {
             return "\nClose";
         }
-        public string inspectionDV(params object[]thamso)
+        public object inspectionDV(params object[]thamso)
         {
             return "kiem tra thiết bị sau moi buoi";
         }
@@ -27,26 +53,25 @@ namespace QuanLyPhongTinHoc
 
         }
 
-        public string processingUS(params object[] thamso)
+        public object processingUS(params object[] thamso)
         {
           
             return "hinh thuc xu li";
         }
-        public string checkProcessing(params object[] thamso)
+        public object checkProcessing(params object[] thamso)
         {
             
             return "kiem tra nop phat";
         }
-        public string congViec(params object[]thamso)
+        public object congViec(params object[]thamso)
         {
-            string ketqua = this.processingUS();
+            object ketqua = this.processingUS();
             bool kq = this.kiemTra();
             if (kq == true)
-                return "khong co thiet bi hu";
-            string kq1 = this.processingUS();
-            string kq2 = this.checkProcessing(kq1);
+                return (string)"khong co thiet bi hu";
+            object kq1 = this.processingUS();
+            object kq2 = this.checkProcessing(kq1);
             return kq2;
         }
-
     }
 }

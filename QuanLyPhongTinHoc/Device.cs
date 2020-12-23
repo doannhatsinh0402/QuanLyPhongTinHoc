@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhongTinHoc
 {
-    public  class Device
+    public abstract class Device
     {
         public Status qualityStatus { get; set; }
         public DateTime dateOfInstall { get; set; }
@@ -14,43 +14,59 @@ namespace QuanLyPhongTinHoc
         public string nameOfProducer { get; set; }
         public string colorOfDevice { get; set; }
         public string idDevice { get; set; }
-       public DateTime dateOfWarranty { set; get; } //thoi gian bao hanh
+        public DateTime dateOfWarranty { set; get; } //thoi gian bao hanh
         
-        public List<Device> deviceConnect { get; set; }
         public string price { get; set; }
-        public Device()
+        public Device(){}
+        public Device(Status quality, DateTime dateofinstall, string namedevice, string nameofproducer,
+            string colorofdevice, string iddevice, DateTime dateofwarrnty)
         {
-            this.deviceConnect = new List<Device>();
+            this.qualityStatus = quality;
+            this.dateOfInstall = dateofinstall;
+            this.nameDevice = namedevice;
+            this.nameOfProducer = nameofproducer;
+            this.colorOfDevice = colorofdevice;
+            this.idDevice = iddevice;
+            this.dateOfInstall = dateofinstall;
         }
-        public string liquidityDV(params object[]thamso)
+        public Device(Device device)
+        {
+            this.qualityStatus = device.qualityStatus;
+            this.dateOfInstall = device.dateOfInstall;
+            this.nameDevice = device.nameDevice;
+            this.nameOfProducer = device.nameOfProducer;
+            this.colorOfDevice = device.colorOfDevice;
+            this.idDevice = device.idDevice;
+            this.dateOfInstall = device.dateOfInstall;
+        }
+        public virtual object liquidityDV(params object[]thamso)
         {
 
             return "tien thanh li \n";
         }
-        public string buyNewDV(params object[]thamso)
+        public virtual object buyNewDV(params object[]thamso)
         {
             return "so tien mua\n";
         }
      
-        public string repairDV(params object[]thamso)
+        public virtual object repairDV(params object[]thamso)
         {
             string dateKT = "ngay kiem tra";
              eventDV?.Invoke(dateKT);
             return dateKT;
         }
         
-        public string warrantyDV(params object[] thamso)
+        public virtual object warrantyDV(params object[] thamso)
         {
             return " bao hanh \n";
         }
-        public object report(params object[] thamso)
+        public virtual string report(params object[] thamso)
         {
-            string warranty = this.warrantyDV();
-            string repair = this.repairDV();
-            string BuyNewDevice = this.buyNewDV(repair);
-            string ThanhLi = this.liquidityDV(repair);
+            string warranty = (string)this.warrantyDV();
+            string repair = (string)this.repairDV();
+            string BuyNewDevice = (string)this.buyNewDV(repair);
+            string ThanhLi = (string)this.liquidityDV(repair);
             string ketqua = warranty + repair + BuyNewDevice + ThanhLi;
-
             return "bao cao";
         }
         public delegate void delegateDV(string kq);

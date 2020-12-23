@@ -2,8 +2,15 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="QuanLyPhongTinHoc.Device">
     <Position X="1.25" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="QuanLyPhongTinHoc.Device.delegateDV" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Device.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAABAAAIAAAgAAAABAJAAAAAAAAAAAAQAACAAAAAAAA=</HashCode>
+      <HashCode>AAAFAAAIAAggAAAAABJIEAAAAAAAAAAQAACAAABAAgA=</HashCode>
       <FileName>Device.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,7 +31,7 @@
   <Class Name="QuanLyPhongTinHoc.Television">
     <Position X="11.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Television.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,7 +52,7 @@
   <Class Name="QuanLyPhongTinHoc.Camera">
     <Position X="13.25" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Camera.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -59,14 +66,14 @@
   <Class Name="QuanLyPhongTinHoc.Manager">
     <Position X="11.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEQAAAIAAADAAAAQAAAAIAAAIAAAAAABAAAAQAAAIA=</HashCode>
       <FileName>Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QuanLyPhongTinHoc.User">
     <Position X="13" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,7 +87,7 @@
   <Class Name="QuanLyPhongTinHoc.Screen">
     <Position X="4" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Screen.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -108,14 +115,21 @@
   <Class Name="QuanLyPhongTinHoc.Cabinet">
     <Position X="17.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>ADAAAAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAA=</HashCode>
       <FileName>Cabinet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="QuanLyPhongTinHoc.Database">
     <Position X="16.5" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="QuanLyPhongTinHoc.Database.queryHandel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Database.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIAAAQAAAAA=</HashCode>
+      <HashCode>AAECEAAAAAQBAQIAAAAAABAAQQAMQogAAIAAAAAQACA=</HashCode>
       <FileName>Database.cs</FileName>
     </TypeIdentifier>
   </Class>

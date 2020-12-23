@@ -8,11 +8,14 @@ namespace QuanLyPhongTinHoc
 {
     public class User:Human
     {
-        public string checkIn(params object[]thamso)
+        public User() { }
+        public User(string name, string age, string id) : base(name, age, id) { }
+        public User(Human human) : base(human) { }
+        public object checkIn(params object[]thamso)
         {
             return "ngay su dung + ten thiet bi hu hong";
         }
-        public string compensationDV(params object[]thamso)
+        public object compensationDV(params object[]thamso)
         {
             
             return "den bu theo quy dinh";

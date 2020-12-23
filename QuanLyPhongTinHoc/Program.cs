@@ -6,7 +6,8 @@ namespace QuanLyPhongTinHoc
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Manager a = new Manager();
+            Screen b = new Screen();
         }
     }
 }
