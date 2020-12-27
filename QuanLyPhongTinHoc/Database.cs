@@ -33,6 +33,10 @@ namespace QuanLyPhongTinHoc
             listServer = new List<ServerModel>();
             listTelevision = new List<Television>();
         }
+        public Database(string pass)
+        {
+            this.passwordOfDB = pass;
+        }
         public Database(List<Camera> listcam, List<Chair> listchair,
             List<Desk> listdesk, List<Keyboard> listkeyboard, List<Manager> listmanager,
             List<Mouse> listmouse, List<PC> listpc, List<Screen> listscreen,

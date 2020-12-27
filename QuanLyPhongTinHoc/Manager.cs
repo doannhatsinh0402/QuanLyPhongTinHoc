@@ -8,7 +8,7 @@ namespace QuanLyPhongTinHoc
 {
     public class Manager:Human
     {
-        protected Database managerDB;
+        private Database managerDB;
         public Manager(string name, string age, string id) : base(name, age, id) 
         {
             managerDB = new Database();
@@ -33,7 +33,7 @@ namespace QuanLyPhongTinHoc
         }
         private object ManagerDB_queryEvent(params object[] pas)
         {
-            return "Remove device";
+            return "Remove device" + pas[0].GetType().Name;
         }
         private object ManagerDB_queryEvent2(params object[] pas)
         {
