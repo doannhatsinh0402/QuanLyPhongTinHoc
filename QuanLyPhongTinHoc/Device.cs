@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhongTinHoc
 {
-    public abstract class Device
+    public abstract class Device //astract
     {
         public Status qualityStatus { get; set; }
         public DateTime dateOfInstall { get; set; }
@@ -15,12 +15,13 @@ namespace QuanLyPhongTinHoc
         public string colorOfDevice { get; set; }
         public string idDevice { get; set; }
         public DateTime dateOfWarranty { set; get; } //thoi gian bao hanh
-        
-        public string price { get; set; }
+      
+        public string priceOfDevice { get; set; }
         public Device(){}
         public Device(Status quality, DateTime dateofinstall, string namedevice, string nameofproducer,
-            string colorofdevice, string iddevice, DateTime dateofwarrnty)
+            string colorofdevice, string iddevice, DateTime dateofwarrnty, string price)
         {
+            this.priceOfDevice = price;
             this.qualityStatus = quality;
             this.dateOfInstall = dateofinstall;
             this.nameDevice = namedevice;
@@ -44,11 +45,7 @@ namespace QuanLyPhongTinHoc
 
             return "tien thanh li \n";
         }
-        public virtual object buyNewDV(params object[]thamso)
-        {
-            return "so tien mua\n";
-        }
-     
+            
         public virtual object repairDV(params object[]thamso)
         {
             string dateKT = "ngay kiem tra";

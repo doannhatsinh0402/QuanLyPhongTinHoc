@@ -9,6 +9,7 @@ namespace QuanLyPhongTinHoc
     {
         public DataType typeOfDateBase { get; set; }
         public string passwordOfDB { get; set; }
+        public string nameDB { get; set; }
         public List<Camera> listCamera { get; set; }
         public List<Manager> listManager { get; set; }
         public List<Chair> listChair { get; set; }
@@ -33,9 +34,10 @@ namespace QuanLyPhongTinHoc
             listServer = new List<ServerModel>();
             listTelevision = new List<Television>();
         }
-        public Database(string pass)
+        public Database(string pass, string name)
         {
             this.passwordOfDB = pass;
+            this.nameDB = name;
         }
         public Database(List<Camera> listcam, List<Chair> listchair,
             List<Desk> listdesk, List<Keyboard> listkeyboard, List<Manager> listmanager,

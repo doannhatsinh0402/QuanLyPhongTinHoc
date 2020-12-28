@@ -9,7 +9,7 @@ namespace QuanLyPhongTinHoc
     public class User:Human
     {
         public User() { }
-        public User(string name, string age, string id) : base(name, age, id) { }
+        public User(string name,string age, string id) : base(name, age, id) { }
         public User(Human human) : base(human) { }
         public object checkIn(params object[]thamso)
         {

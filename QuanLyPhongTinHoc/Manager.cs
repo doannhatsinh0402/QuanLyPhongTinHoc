@@ -9,7 +9,7 @@ namespace QuanLyPhongTinHoc
     public class Manager:Human
     {
         private Database managerDB;
-        public Manager(string name, string age, string id) : base(name, age, id) 
+        public Manager(string name,string age, string id) : base(name, age, id) 
         {
             managerDB = new Database();
         }

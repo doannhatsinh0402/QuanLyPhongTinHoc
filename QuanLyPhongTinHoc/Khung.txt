@@ -1,0 +1,39 @@
+﻿Database:
+- thuộc tính: Kiểu database, password, tên
+- Phương thức: truy vấn, mở kết nối, đống kết nối, chọn database, chọn table
+Database truy vấn qua các bước:
+B1. Nếu mở kết nối thành công nhảy tới B2, ngược lại báo lỗi và kết thúc.
+B2. Chọn Database.
+B3. Chọn Table, tham số là kết quả B2.
+B4. Thực hiện truy vấn.
+B5. Đóng kết nối.
+B6. Trả về kết quả B4.
+
+Device:
+- thuộc tính: tình trạng, ngày lắp đặt, tên thiết bị, tên nhà sản xuất, màu sắc, id, thời gian bảo hành, giá.
+- Phương thức:
+
+Human: (abstract class)
+- Thuộc tính: tên, Tuổi, id.
+Manager: (còn tiếp)
+- Các thuộc tính kế thừa từ Human.
+- Phương thức: Thêm thiết bị, Thanh lý thiết bị, Kiểm tra thiết bị, Sửa chửa thiết bị, Check in, Check out, cấp quyền sử dụng, thu quyền sử dụng, Thêm thiết bị vào tủ.
+User: (còn tiếp)
+- Các thuộc tính kế thừa từ Human, quyền sử dụng.
+- Check in, Check out.
+Camera: 
+- Các thuộc tính kế thừa từ Device, vị trí.
+- Phương thức: Mở kết nối database, nhận dạng, kiểm tra trạng thái kích hoạt, kết nối chuỗi stream,
+kiểm tra nhiệt độ, quay trái, quay phải, quay lên trên, quay xuống dưới.
+Các bước hoạt động của camera:
+B1. Kiểm tra đã kích hoạt hay chưa, nếu chưa thì kích hoạt thì kết thúc, ngược lại qua B2.
+B2. Kết nối chuỗi stream.
+B3. Thực hiện nhận dạng.
+B4. Kiểm tra nhiệt độ.
+B5. Cập nhật kết quả B3,B4 vào database(truy vấn update).
+B6. Đóng kết nối database.
+Cabinet: (còn tiếp)
+- Thuộc tính: Các thuộc tính kế thừa từ Device, vị trí, mã id.
+- Phương thức.
+Tất cả các thiết bị chưa sử dụng được bỏ trong Cabinet.
+

@@ -9,8 +9,8 @@ namespace QuanLyPhongTinHoc
         public DateTime previousMaintenanceDate { get; set; }
         public ServerModel() { }
         public ServerModel(DateTime predate, Status quality, DateTime dateofinstall, string namedevice, string nameofproducer,
-            string colorofdevice, string iddevice, DateTime dateofwarrnty)
-            : base(quality, dateofinstall, namedevice, nameofproducer, colorofdevice, iddevice, dateofwarrnty)
+            string colorofdevice, string iddevice, DateTime dateofwarrnty,string price)
+            : base(quality, dateofinstall, namedevice, nameofproducer, colorofdevice, iddevice, dateofwarrnty, price)
         {
             this.previousMaintenanceDate = predate;
         }
